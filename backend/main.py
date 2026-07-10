@@ -79,8 +79,8 @@ async def repair(request: Request) -> Response:
             np.asarray(mesh.faces, dtype=np.int64),
         )
         fixer.repair(joincomp=True, remove_smallest_components=False)
-        if len(fixer.f) > 0:
-            mesh = trimesh.Trimesh(fixer.v, fixer.f)
+        if len(fixer.faces) > 0:
+            mesh = trimesh.Trimesh(fixer.points, fixer.faces)
             trimesh.repair.fix_normals(mesh)
 
     if len(mesh.faces) == 0:

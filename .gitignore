@@ -220,6 +220,10 @@ __marimo__/
 # Node / frontend
 node_modules/
 frontend/dist/
+*.tsbuildinfo
+
+# The Python template's "lib/" pattern above would swallow frontend source
+!frontend/src/lib/
 
 # Python venv
 .venv/

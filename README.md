@@ -29,6 +29,13 @@ npm run dev
 
 Open http://localhost:5173 and drop an STL file into the window.
 
+### Deploy to Render
+
+The repo includes a [`render.yaml`](render.yaml) blueprint that defines two services:
+
+- **stl-studio-api** — the FastAPI mesh service (Python web service, free plan)
+- **stl-studio** — the built frontend served as a static site, with `/api/*` rewritten to the backend so the app stays same-origin
+
 ### Features
 
 - Drag-and-drop loading of binary and ASCII STL files

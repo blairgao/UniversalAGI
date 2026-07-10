@@ -1,0 +1,8 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+trimesh>=4.4
+numpy>=2.0
+scipy>=1.14
+networkx>=3.3
+fast-simplification>=0.1.9
+pymeshfix>=0.17
